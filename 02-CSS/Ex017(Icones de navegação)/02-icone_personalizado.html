@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        h1{
+            text-align: center;
+            padding: 5px;
+        }
+        /*ocultar o input, pois basta clicar no label*/
+        input[type='file']{
+            display: none;
+        }
+        div{
+            /*centralização de div*/
+            position:absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%,-50%);
+        }
+        /*personalizando a caixa do arquivo*/
+        label{
+            border: 2px solid black;
+            padding: 10px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>MENU</h1>
+    <div>
+    <input type="file" name="documento" id="iddocumento">
+    <label for="iddocumento">
+                <span class="material-symbols-outlined">cloud_upload</span>
+                Selecionar arquivo
+    </label>
+    </div>
+</body>
+</html>

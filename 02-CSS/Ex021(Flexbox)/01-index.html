@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /*Posição das divs: coluna(column) ou linha(row)*/
+            flex-direction: row;
+            /*quebra de linha se preciso*/
+            flex-wrap: wrap;
+            /*alinhar items (caixas)*/
+            justify-content: center;
+        }
+        .item{
+            margin: 10px;
+            width: 80px;
+            height: 40px;
+            padding: 50px;
+            border: 2px solid black;
+            color: black;
+        }
+        .item:hover{
+            background-color:deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Audios e Vídeos</h1>
+
+    <h2>Reproduçaõ de áudio</h2>
+    <!--Maneira 1-->
+    <audio src="midia/Cool Revenge.mp3" controls></audio>
+    <!--Maneira 2-->
+    <p>
+    <!--Controls: botão de play-->
+    <!--Autoplay: toca automáticamente-->
+    <audio preload="metadata" autoplay controls loop>
+        <!--Diversos tipos de áudios para caso haja problemas no navegador-->
+        <source src="midia/Dead Wrong.mp3" type="audio/mpeg">
+        <source src="midia/Dead Wrong.ogg" type="audio/ogg">
+        <source src="midia/Dead Wrong.wav" type="audio/wav">
+    </audio>
+    </p>
+
+    <h2>Reprodução de vídeos</h2>
+    <!--Maneira 1-->
+    <video src="midia/video.mp4.mp4" width="500" height="300" controls></video>
+    <!--Maneira 2-->
+    <p>
+        <video controls width="500" height="300">
+        <source src="midia/video.mp4.mp4" type="video/mp4">
+        <source src="midia/Video.webm.webm" type="video/webm">
+        <source src="midia/Video.mkv.mkv" type="video/mkv">
+        <p>Seu navergador não tem compatibilidade com reprodução de videos</p>
+    </video>
+    </p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 1670.21
+        //document.write: escrever no documento
+        //toFixed: numeros de casas décimais exibidas
+        document.write(n.toFixed(1)+'<br>')
+        //converter número em real brasileiro
+        document.write(n.toLocaleString('pt-br', {style: 'currency',currency: 'BRL'}))
+        document.write('<br>')
+        document.write(n.toLocaleString('pt-BR',{style: 'currency',currency: 'EUR'}))
+    </script>
+</body>
+</html>

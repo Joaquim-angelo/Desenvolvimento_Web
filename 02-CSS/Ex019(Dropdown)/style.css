@@ -1,0 +1,45 @@
+@charset 'UTF*';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+ul>li{
+    display: inline-block;
+    position: relative;
+}
+
+ul>li>a{
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul>li>a:hover{
+    background-color: rgba(184, 12, 46, 0.863);
+    border: 1px solid white;
+    transition: border 0.4s
+}
+
+/*Personalizando dropdown*/
+ul>li>ul.dropdown{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    display: none;
+}
+
+ul>li:hover>ul.dropdown{
+    display: block;
+}
