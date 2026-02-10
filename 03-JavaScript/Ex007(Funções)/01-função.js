@@ -9,6 +9,7 @@ function paridade(n){
 }
 
 console.log(paridade(5))
+console.log(paridade(2))
 
 //Para rodar arquivos JS no console é necessária a instalação do node.js no computador.
 //Após isso deve-se instalar o code runner no vscode.

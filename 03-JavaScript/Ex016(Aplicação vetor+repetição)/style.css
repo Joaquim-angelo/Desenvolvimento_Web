@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+body{
+    background-color: beige;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type=text]{
+    margin-top: 10px;
+    width: 250px;
+    height: 25px;
+}
+
+input[type=button]{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#msg{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,+30%);
+    border: 2px solid black;
+    width: 400px;
+    height: 260px;
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+}

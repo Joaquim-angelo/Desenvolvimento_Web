@@ -1,0 +1,48 @@
+@charset 'UF8';
+
+body{
+    margin: 0;
+    background-color:beige ;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-20%);
+}
+
+.resposta{
+   margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 14px;
+    text-align: center;
+    background-color: white;
+}
+
+input[type=button]{
+    margin-top: 50px;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,+200%);
+}
+
+img{
+    max-width:240px ;
+}
+
+#resultado{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,+100%);
+}

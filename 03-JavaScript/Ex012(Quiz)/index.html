@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Escolha uma opção</h1>
+        <p>Qual a capital da Brasil</p>
+        <img src="Brasilia.jpg" alt="capital">
+    </header>
+    <section>
+        <div id="opc_1" class="resposta">
+            <label for="sp">São Paulo</label>
+            <input type="radio" name="resp" id="sp">
+        </div>
+        <div id="opc_2" class="resposta">
+            <label for="br">Brasília</label>
+            <input type="radio" name="resp" id="br">
+        </div>
+        <div id="opc_3" class="resposta">
+            <label for="rj">Rio de Janeiro</label>
+            <input type="radio" name="resp" id="rj">
+        </div>
+        <div id="opc_4" class="resposta">
+            <label for="pa">Porto Alegre</label>
+            <input type="radio" name="resp" id="pa">
+        </div>
+        <input type="button" value="Responder" onclick="responder()">
+    </section>
+    <div id="resultado"></div>
+    <script src="arquivo.js"></script>
+</body>
+</html>
