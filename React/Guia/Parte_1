@@ -1,0 +1,37 @@
+Passo 1: Para criar um projeto em react vá ao terminal e digite: npx create-react-app my-app. 
+    Para que o passo 1 seja realizado, o npm precisa estar instalado na máquina.
+    "my-app" é o nome escolhido no exemplo, mas pode ser qualquer nome, caso altere o nome da pasta, 
+    em cada passo o nome do diretório deve ser alterado também.
+
+Passo 2: Para executar o projeto criado, o diretório do projeto precisa ser selecionado,
+    para isso, use o comando cd no terminal, no caso desse exemplo é usado: cd nome_do_projeto
+
+Passo 3: Após selecionar o diretório, ainda no terminal digite npm start, para iniciar a execução do projeto react.
+    Caso, por algum motivo o servidor react seja encerrado, é possível inicia-lo novamente com o comando npm start.
+
+Passo 4: Ao iniciar o projeto react é exibida uma animação, tudo o que é exibido em tela é programado no arquivo localizada em:
+    my-app -> src -> app.js
+Dentro desse arquivo tudo que é exibido é escrito dentro do script:
+
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+    </div>
+  );
+}
+export default App;
+
+Por conta disso, podemos apagar tudo que está escrito dentro da div "App" para iniciar nossa própria programação em React. 
+Por exemplo, alterando o site, temos: 
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Olá Mundo</h1>
+      <p>Inicio do uso do framework React Js para criar aplicações web</p>
+    </div>
+  );
+}

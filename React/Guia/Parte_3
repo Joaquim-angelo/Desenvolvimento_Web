@@ -1,0 +1,41 @@
+Em React é possível criar outros arquivos componentes para a aplicação.
+    Esses arquivos são criados dentro de uma pasta em: my-app -> src.
+    Para isso, dentro de src, criaremos uma pasta chamada "components".
+    Dentro dessa pasta, criaremos arquivos componentes, como primeiro exemplo foi criado o arquivo: hello_word.js
+
+No arquivo "hello_word.js" podemos criar variáveis, funções, etc. Nesse exemplo foi escrito:
+
+hello_word.js:
+
+//Criando a função a ser exportada
+function Helloword(){
+    return(
+        <div>
+            <h1>Olá mundo</h1>
+            <p>Utilização do primeiro componente</p>
+        </div>
+    )
+}
+//permitindo a exportação da função
+export default Helloword;
+
+Observação: o nome das funções componentes sempre deve começar com letras maiúsculas.
+
+Para que seja possível utilizar as funções componentes, elas são exportadas para App.js, como vemos no script a seguir:
+
+App.js:
+
+import './App.css';
+//importando função de componente
+import Helloword from './components/hello_word';
+
+function App() {
+  return (
+    <div className="App">
+      <Helloword />
+    </div>
+  );
+}
+export default App;
+
+Em uma mesma aplicação, diversos componentes podem ser utilizados, além de que um mesmo componente podem ser usado mais de uma vez.
